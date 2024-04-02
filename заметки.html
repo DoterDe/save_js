@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background: #1E1E1E;
+        }
+        #task--header{
+            width: 320px;
+            display: flex;
+            justify-content: space-between;
+            background: #111827;
+            border-radius: 15px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .task--header--input{
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            width: 200px;
+            background: #111827;
+            color: white;
+        }
+        .task--header--input::placeholder{
+            color: white;
+        }
+        .task--header--button{
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 15px;
+            color: palevioletred;
+            background: none;
+        }
+
+        .task{
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" id="task--header">
+        <input type="text" class="task--header--input" placeholder="Какая задача?">
+        <button class="task--header--button">Add</button>
+    </form>
+
+    <div id="task">
+        <!-- <div class="task">
+            <div class="content">
+                <input type="checkbox">
+                <input type="text">
+            </div>
+            <div class="action">
+                <button class="edit">Edit</button>
+                <button class="del">Delete</button>
+            </div>
+        </div> -->
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
